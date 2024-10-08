@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap to the next line on smaller screens */
+}
+
+.footer-column {
+  flex: 1; /* Distribute space equally among columns */
+  min-width: 150px; /* Minimum width for responsiveness */
+  padding: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
