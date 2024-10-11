@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="pt-40 md:pt-48 bg-[#1E1919] min-h-screen">
-      <div className="container mx-auto px-4">
+    <div className="pt-40 md:pt-48 bg-black min-h-screen relative overflow-hidden"> {/* Changed bg to black */}
+      <div className="container mx-auto px-4 pb-60"> {/* Reduced bottom padding */}
         <motion.div 
           className="text-center"
           initial={{ opacity: 0, y: -50 }}
@@ -15,10 +15,7 @@ export default function Hero() {
           </h1>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
             <span className="block">
-              Dropbox delivers tools that help you move your work forward faster, keep it safe, and
-            </span>
-            <span className="block text-center">
-              let you collaborate with ease.
+              Dropbox delivers tools that help you move your work forward faster, keep it safe, and let you collaborate with ease.
             </span>
           </p>
           <div className="flex justify-center items-start gap-8">
