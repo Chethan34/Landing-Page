@@ -5,3 +5,32 @@
 html {
     scroll-behavior: smooth;
 }
+
+html, body {
+  @apply font-sans;
+}
+
+@font-face {
+    font-family: 'Atlas Grotesk';
+    src: url('/fonts/AtlasGrotesk-Regular.woff2') format('woff2'),
+         url('/fonts/AtlasGrotesk-Regular.woff') format('woff');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Atlas Grotesk';
+    src: url('/fonts/AtlasGrotesk-Medium.woff2') format('woff2'),
+         url('/fonts/AtlasGrotesk-Medium.woff') format('woff');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Atlas Grotesk';
+    src: url('/fonts/AtlasGrotesk-Bold.woff2') format('woff2'),
+         url('/fonts/AtlasGrotesk-Bold.woff') format('woff');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
