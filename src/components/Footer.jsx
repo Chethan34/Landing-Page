@@ -1,6 +1,3 @@
-import { Globe } from 'lucide-react';
-
-
 export default function Footer() {
     return (
         <footer className="bg-black text-white py-16">
@@ -106,24 +103,20 @@ export default function Footer() {
                     </a>
                     <a href="#" className="text-white hover:text-gray-300" aria-label="YouTube">
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth="2" 
-                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"
-                        />
+                            <path fillRule="evenodd" d="M19.148 7.358c.249.248.427.557.519.896.329 1.248.333 3.851.333 3.851s0 2.604-.333 3.852a2.006 2.006 0 0 1-1.415 1.414c-1.247.335-6.252.335-6.252.335s-5.004 0-6.25-.335a2.004 2.004 0 0 1-1.415-1.414C4 14.709 4 12.105 4 12.105s0-2.603.335-3.85a2.003 2.003 0 0 1 1.414-1.42C6.995 6.5 12 6.5 12 6.5s5.004 0 6.252.34c.34.091.648.27.896.518zm-4.59 4.747l-4.158-2.4v4.8l4.158-2.4z" clipRule="evenodd"/>
                         </svg>
                     </a>
                 </div>
                 {/* Language Selection */}
-                <div className="mt-8 flex items-center">
-    <Globe className="w-5 h-5 text-white mr-2" strokeWidth={1} />
-    <button className="text-white hover:underline">
-        English (United States)
-    </button>
-</div>
+                <div className="mt-8">
+                    <button className="text-white hover:underline flex items-center">
+                        <svg className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"/>
+                        </svg>
+                        English (United States)
+                    </button>
+                </div>
             </div>
         </footer>
     );
 }
-
