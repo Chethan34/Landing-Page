@@ -14,6 +14,8 @@ I have recorded a video walkthrough of the code. You can watch it here: [Watch t
 - **Modern UI Components:** The page includes well-structured UI components like the Navbar, Hero section, and Footer, designed with clean and attractive aesthetics.
 - **Smooth Navigation:** The navigation bar allows users to jump to different sections of the page easily.
 - **High-Quality Graphics:** Incorporates visually appealing images and icons that enhance the user experience.
+- **User-Friendly Interface:** Designed with an intuitive UI for easy navigation and interaction.
+
 
 ## Installation
 
