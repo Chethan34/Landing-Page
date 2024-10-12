@@ -13,9 +13,7 @@ export default function ScrollSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   const y = useTransform(scrollYProgress, [0, 0.5], [80, 0]);
   const videoOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
-  
-  // Increase brightness on scroll
-  const brightness = useTransform(scrollYProgress, [0, 0.5], ['1.5', '1']); // Start even brighter
+  const brightness = useTransform(scrollYProgress, [0, 0.5], ['1.5', '1']);
 
   return (
     <div 
@@ -30,11 +28,11 @@ export default function ScrollSection() {
         muted
         style={{
           opacity: videoOpacity,
-          filter: brightness, // Apply brightness filter
+          filter: brightness,
         }}
-        className="w-1/5 h-3/5 object-cover"
+        className="w-1/5 h-auto object-cover"
       />
-      
+
       {/* Center Image (Desktop) */}
       <motion.img
         src={desktop}
@@ -42,7 +40,7 @@ export default function ScrollSection() {
         style={{
           opacity,
           y,
-          filter: brightness, // Apply brightness filter
+          filter: brightness,
         }}
         className="w-3/5 h-auto object-contain relative z-10"
       />
@@ -54,11 +52,11 @@ export default function ScrollSection() {
         style={{
           opacity,
           y,
-          filter: brightness, // Apply brightness filter
+          filter: brightness,
         }}
-        className="absolute w-[15%] h-auto right-[14%] bottom-[15%] object-contain z-20"
+        className="absolute w-[15%] h-auto right-[10%] bottom-[10%] object-contain z-20"
       />
-      
+
       {/* Right Video */}
       <motion.video
         src="/video2.mp4"
@@ -67,9 +65,9 @@ export default function ScrollSection() {
         muted
         style={{
           opacity: videoOpacity,
-          filter: brightness, // Apply brightness filter
+          filter: brightness,
         }}
-        className="w-1/5 h-3/5 object-cover"
+        className="w-1/5 h-auto object-cover"
       />
     </div>
   );
